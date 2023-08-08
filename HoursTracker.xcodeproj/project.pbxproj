@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		041573DC2A82BFEC002C8E6C /* HoursTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041573DB2A82BFEC002C8E6C /* HoursTrackerApp.swift */; };
-		041573DE2A82BFEC002C8E6C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041573DD2A82BFEC002C8E6C /* ContentView.swift */; };
 		041573E02A82BFED002C8E6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041573DF2A82BFED002C8E6C /* Assets.xcassets */; };
-		041573E32A82BFED002C8E6C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041573E22A82BFED002C8E6C /* Preview Assets.xcassets */; };
+		041573EA2A82CCCF002C8E6C /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041573E92A82CCCF002C8E6C /* Storage.swift */; };
+		041573ED2A82FAF7002C8E6C /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041573EC2A82FAF7002C8E6C /* Date.swift */; };
+		041573EF2A82FB01002C8E6C /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041573EE2A82FB01002C8E6C /* Double.swift */; };
+		041573F22A82FB1C002C8E6C /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041573F12A82FB1C002C8E6C /* RootView.swift */; };
+		041573F52A82FB3D002C8E6C /* TrackerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041573F42A82FB3D002C8E6C /* TrackerState.swift */; };
+		041573F72A82FB4A002C8E6C /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041573F62A82FB4A002C8E6C /* ViewModel.swift */; };
+		041573FA2A82FB7A002C8E6C /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041573F92A82FB7A002C8E6C /* Haptics.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		041573D82A82BFEC002C8E6C /* HoursTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoursTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		041573DB2A82BFEC002C8E6C /* HoursTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoursTrackerApp.swift; sourceTree = "<group>"; };
-		041573DD2A82BFEC002C8E6C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		041573DF2A82BFED002C8E6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		041573E22A82BFED002C8E6C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		041573E92A82CCCF002C8E6C /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		041573EC2A82FAF7002C8E6C /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		041573EE2A82FB01002C8E6C /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		041573F12A82FB1C002C8E6C /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		041573F42A82FB3D002C8E6C /* TrackerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerState.swift; sourceTree = "<group>"; };
+		041573F62A82FB4A002C8E6C /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		041573F92A82FB7A002C8E6C /* Haptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptics.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,20 +61,57 @@
 		041573DA2A82BFEC002C8E6C /* HoursTracker */ = {
 			isa = PBXGroup;
 			children = (
-				041573DB2A82BFEC002C8E6C /* HoursTrackerApp.swift */,
-				041573DD2A82BFEC002C8E6C /* ContentView.swift */,
-				041573DF2A82BFED002C8E6C /* Assets.xcassets */,
-				041573E12A82BFED002C8E6C /* Preview Content */,
+				041573F02A82FB0C002C8E6C /* View */,
+				041573F32A82FB2B002C8E6C /* Models */,
+				041573EB2A82FAEB002C8E6C /* Extensions */,
+				041573F82A82FB5E002C8E6C /* Helpers */,
+				041573FB2A82FB85002C8E6C /* Resources */,
 			);
 			path = HoursTracker;
 			sourceTree = "<group>";
 		};
-		041573E12A82BFED002C8E6C /* Preview Content */ = {
+		041573EB2A82FAEB002C8E6C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				041573E22A82BFED002C8E6C /* Preview Assets.xcassets */,
+				041573EC2A82FAF7002C8E6C /* Date.swift */,
+				041573EE2A82FB01002C8E6C /* Double.swift */,
 			);
-			path = "Preview Content";
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		041573F02A82FB0C002C8E6C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				041573DB2A82BFEC002C8E6C /* HoursTrackerApp.swift */,
+				041573F12A82FB1C002C8E6C /* RootView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		041573F32A82FB2B002C8E6C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				041573F62A82FB4A002C8E6C /* ViewModel.swift */,
+				041573F42A82FB3D002C8E6C /* TrackerState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		041573F82A82FB5E002C8E6C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				041573E92A82CCCF002C8E6C /* Storage.swift */,
+				041573F92A82FB7A002C8E6C /* Haptics.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		041573FB2A82FB85002C8E6C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				041573DF2A82BFED002C8E6C /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +172,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				041573E32A82BFED002C8E6C /* Preview Assets.xcassets in Resources */,
 				041573E02A82BFED002C8E6C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +183,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				041573DE2A82BFEC002C8E6C /* ContentView.swift in Sources */,
+				041573F52A82FB3D002C8E6C /* TrackerState.swift in Sources */,
 				041573DC2A82BFEC002C8E6C /* HoursTrackerApp.swift in Sources */,
+				041573ED2A82FAF7002C8E6C /* Date.swift in Sources */,
+				041573EF2A82FB01002C8E6C /* Double.swift in Sources */,
+				041573FA2A82FB7A002C8E6C /* Haptics.swift in Sources */,
+				041573EA2A82CCCF002C8E6C /* Storage.swift in Sources */,
+				041573F22A82FB1C002C8E6C /* RootView.swift in Sources */,
+				041573F72A82FB4A002C8E6C /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,15 +318,17 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"HoursTracker/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 4CQW4CFFYT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Clocker;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,15 +349,17 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"HoursTracker/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 4CQW4CFFYT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Clocker;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

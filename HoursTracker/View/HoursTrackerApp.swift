@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct HoursTrackerApp: App {
+    @StateObject var vm = ViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView()
+                .environmentObject(vm)
         }
     }
 }
